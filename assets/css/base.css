@@ -12,11 +12,11 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
-    list-style: 1.6rem;
+    line-height: 1.6rem;
 }
 
 .grid {
-    width: 1500px;
+    width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
