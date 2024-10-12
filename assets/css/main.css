@@ -262,16 +262,17 @@
 }
 
 .modal__body {
-    background-color: var(--white-color);
     margin: auto;
     position: relative;
     z-index: 1;
-    border-radius: 5px;
 }
 
 /* Auth Modal */
 .auth-form {
     width: 500px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .auth-form__container {
@@ -333,4 +334,36 @@
 
 .auth-form__controls {
     display: flex;
+    justify-content: end;
 }
+
+.auth-form__controls-back {
+    margin-right: 8px;
+}
+
+.auth-form__socials {
+    background-color: #f5f5f5;
+    padding: 12px 32px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.auth-form__socials-icon {
+    font-size: 1.8rem;
+    margin-right: 8px;
+}
+
+.auth-form__socials--google,
+.auth-form__socials--facebook {
+    padding: 16px 30px;
+    border-radius: 2px;
+    border: 1px solid var(--border-color);
+    height: 36px;
+}
+
+.auth-form__socials--facebook .auth-form__socials-icon {
+    color: #0866ff;
+}
+
+.auth-form__socials--google .auth-form__socials-icon {}

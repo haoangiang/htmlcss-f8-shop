@@ -46,14 +46,45 @@ html {
 /* Button style */
 .btn {
     min-width: 142px;
-    height: 36px;
+    height: 34px;
     border: none;
     border-radius: 2px;
     font-size: 1.4rem;
     padding: 0;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--size-s {
+    height: 32px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn.btn--primary {
     background-color: var(--primary-color);
     color: var(--white-color);
+}
+
+.btn.btn--disabled {
+    color: #949494;
+    cursor: default;
+    background-color: #c3c3c3;
+}
+
+/* Style Google */
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
